@@ -1,0 +1,77 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$Vien-Angular-primary: mat-palette($mat-indigo);
+$Vien-Angular-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$Vien-Angular-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$Vien-Angular-theme: mat-light-theme($Vien-Angular-primary, $Vien-Angular-accent, $Vien-Angular-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($Vien-Angular-theme);
+
+$separator-color-light: #f3f3f3;
+$separator-color: #d7d7d7;
+$background-color: #f8f8f8;
+$foreground-color : white;
+$input-background: white;
+
+$dark-btn-background: #131113;
+$light-btn-background: #ececec;
+
+$button-text-color: #fff;
+
+$theme-color-1: #145388;
+$theme-color-2: #2a93d5;
+$theme-color-3: #6c90a1;
+$theme-color-grid: #b7d6e8;
+$theme-color-4: #365573;
+$theme-color-5: #47799a;
+$theme-color-6: #8e9599;
+
+$primary-color: #3a3a3a;
+$secondary-color: #8f8f8f;
+$muted-color: #909090;
+
+$gradient-color-1 : #1f5c8d;
+$gradient-color-2 : #145388;
+$gradient-color-3 : #285172;
+
+$lp-bg-color-1 : #002646;
+$lp-bg-color-2 : #003a62;
+$lp-bg-color-3 : #016da9;
+$lp-bg-color-4 : #0193de;
+
+$shadowOffsetsTop : 1 3 10 14 19;
+$shadowBlursTop: 1.5 5 10 14 19;
+$shadowOpacitiesTop: 0.04 0.1 0.19 0.25 0.3;
+
+$shadowOffsetsBottom : 1 3 6 10 15;
+$shadowBlursBottom: 3 6 6 5 6;
+$shadowOpacitiesBottom: 0.04 0.1 0.2 0.22 0.22;
+
+$logoPath: "../../../img/logo-black.svg";
+$logoPathMobile: "../../../img/logo-mobile.svg";
+
+$lpLogoPath: "../../../img/logo-black.svg";
+$lpLogoPathPinned: "../../../img/logo-black.svg";
+
+@import "../_mixins.scss";
+@import "../_vien.style.scss";
+

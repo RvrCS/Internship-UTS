@@ -1,0 +1,65 @@
+<div class="menu" (click)="menuClicked($event)">
+    <div class="main-menu">
+        <perfect-scrollbar class="scroll" [config]="{suppressScrollX: true}">
+            <ul class="list-unstyled">
+                <li *ngFor="let item of menuItems"
+                    [ngClass]="{'active': (selectedParentMenu === item.id && viewingParentMenu === '') 
+                    || viewingParentMenu === item.id}">
+
+
+                    <a *ngIf="!item.newWindow && item.subs &&  item.subs.length>0 && item.select"
+                        (click)="openSubMenu($event,item); false" [href]="item.to">
+                        <i *ngIf="!item.img" [ngClass]="item.icon"></i>
+                            <img *ngIf="item.img" alt="thumb" [src]="item.img"
+                                class="responsive border-0 border-radius img-fluid" />
+
+                         {{item.label}}</a>
+
+                         <a *ngIf="!item.newWindow && item.subs &&  item.subs.length==0 && item.select"
+                         [routerLink]="[item.to]" routerLinkActive="active">
+                            <i *ngIf="!item.img" [ngClass]="item.icon"></i>
+                                <img *ngIf="item.img" alt="thumb" [src]="item.img"
+                                    class="responsive border-0 border-radius img-fluid" />
+    
+                             {{item.label}}</a>
+
+
+                </li>
+            </ul>
+        </perfect-scrollbar>
+    </div>
+    <div class="sub-menu">
+        <perfect-scrollbar class="scroll" [config]="{suppressScrollX: true}">
+            <ul class="list-unstyled" *ngFor="let item of menuItems" [attr.data-parent]="item.id"
+                [ngClass]="{'d-block': (selectedParentMenu === item.id && viewingParentMenu==='') || viewingParentMenu === item.id}">
+                <li *ngFor="let sub of item.subs"
+                    [ngClass]="{'active': currentUrl === sub.to ,'has-sub-item' : sub.subs&& sub.subs.length>0 }">
+
+                    <a *ngIf="(!sub.newWindow && (!sub.subs || sub.subs.length<=0))&& sub.select"
+                        [routerLink]="[sub.to]" routerLinkActive="active">
+                        <i [ngClass]="sub.icon"></i>
+                        <span class="d-inline-block">{{sub.label}}</span>
+                    </a>
+                    <a (click)="collapseSub.toggle()" *ngIf="sub.subs && sub.subs.length > 0 && sub.select"
+                        class="rotate-arrow-icon opacity-50 c-pointer">
+                        <i class="simple-icon-arrow-down"></i>
+                        <span class="d-inline-block">{{sub.label}}</span>
+                    </a>
+                    <div [collapse]="false" #collapseSub="bs-collapse" [isAnimated]="true">
+                        <div *ngIf="sub.subs && sub.subs.length > 0 && sub.select">
+                            <ul class="list-unstyled inner-level-menu">
+                                <li *ngFor="let deepSub of sub.subs" [ngClass]="{'active': currentUrl === deepSub.to}">
+
+                                    <a *ngIf="(!deepSub.newWindow && (!deepSub.subs || deepSub.subs.length<=0))&& deepSub.select"
+                                        [routerLink]="[deepSub.to]" routerLinkActive="active">
+                                        <i [ngClass]="deepSub.icon"></i>
+                                        <span class="d-inline-block">{{deepSub.label}}</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </ul>
+        </perfect-scrollbar>
+    </div>
+</div>

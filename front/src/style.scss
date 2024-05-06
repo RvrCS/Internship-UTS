@@ -1,0 +1,130 @@
+@import "../node_modules/ag-grid-community/src/styles/ag-grid.scss";
+@import "../node_modules/ag-grid-community/src/styles/ag-theme-material/sass/ag-theme-material-mixin.scss";
+
+@import "../node_modules/ag-grid-community/src/styles/ag-theme-alpine/sass/ag-theme-alpine-mixin.scss";
+
+@import "../node_modules/ag-grid-community/src/styles/ag-theme-balham/sass/ag-theme-balham-mixin.scss";
+
+@import '~angular-tree-component/dist/angular-tree-component.css';
+
+.ag-theme-material {
+  @include ag-theme-material();
+}
+
+.ag-theme-alpine {
+  @include ag-theme-alpine();
+}
+
+.ag-theme-balham {
+  @include ag-theme-balham();
+}
+
+.pdf-viewer {
+  background-color: #464646;
+}
+
+.node-content-wrapper,
+.tree-children {
+  position: relative;
+}
+
+.node-content-wrapper::before,
+.tree-children::after {
+  content: "";
+  position: absolute;
+}
+
+.node-content-wrapper::before {
+  border-bottom: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+  height: 28px;
+  top: -17px;
+  width: 20px;
+  left: -28px;
+}
+
+.tree-node-level-1>tree-node-wrapper>.node-wrapper>.node-content-wrapper::before {
+  display: none;
+}
+
+.tree-node-leaf>.node-wrapper>.node-content-wrapper::before {
+  width: 25px;
+}
+
+.tree-children::after {
+  border-left: 1px solid lightgrey;
+  height: 100%;
+  top: -15px;
+  left: -15px;
+}
+
+tree-node:last-child>.tree-node>.tree-children::after {
+  border-left: none;
+}
+
+.toggle-children {
+  z-index: 1;
+}
+
+
+
+  
+.modal-content {
+  animation-name: animationModal;
+  animation-duration: 0.3s;
+}
+
+  
+.modal-close {
+  animation-name: animationModal2;
+  animation-duration: 0.3s;
+}
+
+
+@keyframes animationModal2 {
+  100% {
+    transform: scale(0.5)
+  }
+
+  75% {
+    transform: scale(1.1)
+  }
+
+  0% {
+    transform: scale(1)
+  }
+}
+
+@keyframes animationModal {
+  0% {
+    transform: scale(0.5)
+  }
+
+  75% {
+    transform: scale(1.1)
+  }
+
+  100% {
+    transform: scale(1)
+  }
+}
+
+/*
+.modal {
+  width:10px;
+  height:100px;
+  animation:modalSlide 0.5s ease-out forwards;
+  transform: translateY(50%);
+  }
+
+@keyframes modalSlide {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}*/

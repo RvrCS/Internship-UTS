@@ -1,0 +1,31 @@
+<div class="card auth-card" style="border-radius: 15px;">
+  <div class="form-side">
+    <a class="c-pointer">
+      <span class="logo-single" style="width: 100%;height: 60px;margin-bottom: 10px;"></span>
+    </a>
+    <h4 class="mb-4">Iniciar sesión</h4>
+
+    <div>
+
+      <label class="form-group has-float-label">
+        <input class="form-control" name="Usuario" [(ngModel)]="Usuario" (keyup.enter)="iniciarSesion()" />
+        <span>Usuario</span>
+      </label>
+
+
+      <label class="form-group has-float-label">
+        <input class="form-control" type="password" placeholder="" name="Pass" [(ngModel)]="Pass" (keyup.enter)="iniciarSesion()" />
+        <span>Contraseña</span>
+      </label>
+
+
+      <div class="d-flex justify-content-between align-items-center">
+     <!---   <a routerLink="/user/forgot-password">Olvidaste la contraseña?</a>-->
+
+        <button *ngIf="!login" class="btn btn-primary" (click)="iniciarSesion()">Iniciar sesión</button>
+
+      </div>
+    </div>
+
+  </div>
+</div>

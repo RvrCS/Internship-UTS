@@ -1,0 +1,12 @@
+<div id="app-container" [className]="sidebar.containerClassnames">
+  <app-topnav *ngIf="initCache"></app-topnav>
+  
+  <app-sidebar *ngIf="initCache"></app-sidebar>
+
+  <main [@routeAnimations]="prepareRoute(outlet)">
+    <div class="container-fluid">
+      <router-outlet #outlet="outlet" *ngIf="initCache"></router-outlet>
+    </div>
+  </main>
+  <app-footer *ngIf="initCache"></app-footer>
+</div>
