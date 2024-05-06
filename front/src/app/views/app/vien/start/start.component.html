@@ -1,10 +1,71 @@
 <div class="row">
-  <div class="col-lg-12 col-md-12 mb-4 text-center">
+  <div class="col text-center" onmouseover="this.style.transform = 'scale(1.05)';" onmouseout="this.style.transform = 'scale(1)';">  
     <div class="card">
       <div class="card-body">
-        <h2 class="card-title">
-          <strong>WELCOME TO TARUKS SOLUCIONES </strong>
+        <h5 class="card-title mb-3">
+          <i class='bx bxs-circle' style='color:#50bbbb'  ></i> Clientes promedio</h5>
+        <h2 class="card-text" style="font-size: 30px;">
+          <strong>18</strong>
         </h2>
+        <p class="card-text">
+          Total clientes promedio
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col text-center" onmouseover="this.style.transform = 'scale(1.05)';" onmouseout="this.style.transform = 'scale(1)';">  
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title mb-3">
+          <i class='bx bxs-circle' style='color:#d25100'  ></i> Inventario del dia</h5>
+        <h2 class="card-text" style="font-size: 30px;">
+          <strong>$1,987,654.32</strong>
+        </h2>
+        <p class="card-text">
+          Monto total de inventario
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col text-center" onmouseover="this.style.transform = 'scale(1.05)';" onmouseout="this.style.transform = 'scale(1)';">  
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title mb-3">
+          <i class='bx bxs-circle' style='color:#149006'  ></i> Cuentas a cobrar</h5>
+        <h2 class="card-text" style="font-size: 30px;">
+          <strong>$1,987,654.32</strong>
+        </h2>
+        <p class="card-text">
+          Total de cuentas a cobrar
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col text-center" onmouseover="this.style.transform = 'scale(1.05)';" onmouseout="this.style.transform = 'scale(1)';">  
+    <div class="card">
+      <div class="card-body ">
+        <h5 class="card-title mb-3">
+          <i class='bx bxs-circle bx-flip-vertical bx-tada' style='color:#bd0000' ></i> Cuentas por pagar</h5>
+        <h2 class="card-text" style="font-size: 30px;">
+          <strong>$1,987,654.32</strong>
+        </h2>
+        <p class="card-text">
+          Total de cuentas por cobrar
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Gráfica -->
+<div class="row">
+  <div class="col  mt-3">  
+    <div class="card">
+      <div class="card-body d-flex justify-content-between">
+        <h5 class="card-title mb-3">Clientes promedio Análisis de Compras, Ventas y Pagos</h5>
+        <a href="#" class="btn btn-primary">Ventas y pagos</a>
+      </div>
+      <div class="row justify-content-center mb-4">
+        <div id="graficaId" style="width: 600px; height: 400px;"></div>
       </div>
     </div>
   </div>
