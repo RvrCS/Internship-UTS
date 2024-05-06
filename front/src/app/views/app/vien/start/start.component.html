@@ -1,11 +1,66 @@
-<div class="row">
-  <div class="col-lg-12 col-md-12 mb-4 text-center">
-    <div class="card">
-      <div class="card-body">
-        <h2 class="card-title">
-          <strong>WELCOME TO TARUKS SOLUCIONES </strong>
-        </h2>
+<div class="container py-5">
+    
+  <div class="chart-container">
+  <div class="row justify-content-center mb-4">
+    <div class="buttons-container" style="position: absolute; top: -11; right: 11;">
+      <button mat-button (click)="onButtonClick1()">Botón 1</button>
+      <button mat-button (click)="onButtonClick2()">Botón 2</button>
+      
+    </div>
+    <div id="IdGrafica" style="width: 600px; height: 400px;"></div>
+  </div>
+  </div>
+
+  <div class="row justify-content-center mb-4">
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card h-100 border border-white shadow-sm w-90" style="background: rgba(247, 244, 244, 0.58); border-radius: 17px; text-align: center; cursor: pointer; 
+      transition: all 0.5s; display: flex; align-items: center; justify-content: center; user-select: none; font-weight: bolder; color: black; box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22); backdrop-filter: blur(6px);" 
+      onmouseover="this.style.transform = 'scale(1.05)';" onmouseout="this.style.transform = 'scale(1)';">
+        <div class="card-body text-center" style="cursor: pointer;" onmouseover="this.style.transform = 'scale(1.05)';" onmouseout="this.style.transform = 'scale(1)';">
+            <p class="font-weight-bold" style="font-size: 24px;">Compras a proveedores</p>
+            <p style="font-size: 18px;">$1,987,654.32</p>
+            <p style="font-size: 18px;">Total de compras</p>
+        </div>
+      </div>  
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card h-100 border border-white shadow-sm w-90" style="background:  rgba(247, 244, 244, 0.58); border-radius: 17px; text-align: center; cursor: pointer; 
+      transition: all 0.5s; display: flex; align-items: center; justify-content: center; user-select: none; font-weight: bolder; color: black; box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22); backdrop-filter: blur(6px);" 
+      onmouseover="this.style.transform = 'scale(1.05)';" onmouseout="this.style.transform = 'scale(1)';">
+        <div class="card-body text-center" style="cursor: pointer;" onmouseover="this.style.transform = 'scale(1.15)';" onmouseout="this.style.transform = 'scale(1)';">
+          <p class="font-weight-bold" style="font-size: 24px;">Monto facturado al mes</p>
+          <p style="font-size: 18px;">$1,987,654.32</p>
+          <p style="font-size: 18px;">Total ventas facturadas</p>
+        </div>
       </div>
     </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card h-100 border border-white shadow-sm w-90" style="background:  rgba(247, 244, 244, 0.58); border-radius: 17px; text-align: center; cursor: pointer; 
+          transition: all 0.5s; display: flex; align-items: center; justify-content: center; user-select: none; font-weight: bolder; color: black; box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22); backdrop-filter: blur(6px);" 
+          onmouseover="this.style.transform = 'scale(1.05)';" onmouseout="this.style.transform = 'scale(1)';">
+        <div class="card-body text-center" style="cursor: pointer;" onmouseover="this.style.transform = 'scale(1.15)';" onmouseout="this.style.transform = 'scale(1)';">
+          <p class="font-weight-bold" style="font-size: 24px;">Monto en notas de ventas</p>
+          <p style="font-size: 18px;">$1,987,654.32</p>
+          <p style="font-size: 18px;">Total de notas de venta</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+      <div class="card h-100 border border-white shadow-sm w-90" style="background:  rgba(247, 244, 244, 0.58); border-radius: 17px; text-align: center; cursor: pointer; 
+      transition: all 0.5s; display: flex; align-items: center; justify-content: center; user-select: none; font-weight: bolder; color: black; box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22); backdrop-filter: blur(6px);" 
+      onmouseover="this.style.transform = 'scale(1.05)';" onmouseout="this.style.transform = 'scale(1)';">
+        <div class="card-body text-center" style="cursor: pointer;" onmouseover="this.style.transform = 'scale(1.15)';" onmouseout="this.style.transform = 'scale(1)';">
+          <p class="font-weight-bold" style="font-size: 24px;">Monto de pagos recibidos</p>
+          <p style="font-size: 18px;" >$1,987,654.32</p>
+          <p style="font-size: 18px;">Total de pagos recibidos</p>
+        </div>
+      </div>  
+    </div>
+
+  
+
   </div>
 </div>
