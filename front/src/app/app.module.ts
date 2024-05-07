@@ -19,6 +19,8 @@ import { DownloadService } from './shared/downloadService';
 import { ContextMenuModule } from 'ngx-contextmenu';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
+
+
 @NgModule({
   imports: [
     BrowserModule,
