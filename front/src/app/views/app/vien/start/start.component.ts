@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Constantes } from 'src/app/constants/constantes';
 import { Facade } from 'src/app/shared/services/facadeService';
-import { ECharts, init } from 'echarts';
+import { ECharts, color, init } from 'echarts';
 
 export class CxCDashBoard {
   Fecha: string = '';
@@ -20,6 +20,11 @@ export class StartComponent implements OnInit {
   
   ngOnInit(): void {
     this.chart = init(document.getElementById('IdGrafica') as HTMLDivElement);
+    
+    window.addEventListener('resize', () => {
+      this.chart.resize();
+    });
+    
     const option = {
       title: {
         text: 'Ventas de los últimos 12 meses',
@@ -40,11 +45,13 @@ export class StartComponent implements OnInit {
         {
           name: 'Sucursal A',
           type: 'line',
+          color: 'blue',
           data: [120000, 150000, 180000, 200000, 220000, 210000, 240000, 230000, 220000, 210000, 200000, 230000]
         },
         {
           name: 'Otra línea',
           type: 'line',
+          color: 'orange',
           data: [100000, 130000, 160000, 190000, 200000, 190000, 220000, 210000, 200000, 190000, 180000, 210000]
         }
       ]
