@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import {
   AccordionModule, AlertModule, CollapseModule, BsDropdownModule, ModalModule, PaginationModule, PopoverModule, ProgressbarModule,
-   SortableModule, TabsModule, TooltipModule, TypeaheadModule, ButtonsModule
+   SortableModule, TabsModule, TooltipModule, TypeaheadModule, ButtonsModule,
+   BsDropdownToggleDirective
 } from 'ngx-bootstrap';
 
 
