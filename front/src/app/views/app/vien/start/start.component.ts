@@ -66,7 +66,7 @@ export class StartComponent implements OnInit {
     this.graph = init(document.getElementById('graficaLineal') as HTMLDivElement);
     const opciones = {
       title: {
-        text: 'Corporativo Compras-Ventas-Pagos',
+        text: 'Venta Acumulada',
         textStyle: {
           align: 'center'
         },
