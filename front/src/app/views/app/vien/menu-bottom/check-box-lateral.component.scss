@@ -1,0 +1,38 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font: bold 15px sans-serif;
+  text-transform: uppercase;
+  color: grey;
+}
+
+ul li {
+  padding: 0 .5em .25em;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s;
+}
+
+ul li:before {
+  content: "";
+  position: absolute;
+  inset: calc(100% - 3px) 0 0 0;
+  background: #ce4f20;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+ul li:hover {
+  color: #fff;
+}
+
+ul li:hover:before {
+  transform: scaleX(1);
+}
+
+  

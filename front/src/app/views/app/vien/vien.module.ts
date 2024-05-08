@@ -7,9 +7,12 @@ import { LayoutContainersModule } from 'src/app/containers/layout/layout.contain
 import { DashHeaderComponent } from './dash-header/dash-header.component';
 import { DashChartsComponent } from './dash-charts/dash-charts.component';
 import { DashFooterComponent } from './dash-footer/dash-footer.component';
+import { ConceptoComponent } from './concepto/concepto.component';
+import { CheckBoxLateralComponent } from './menu-bottom/check-box-lateral.component';
+import { CheckboxsComponent } from './checkboxs/checkboxs.component';
 
 @NgModule({
-  declarations: [VienComponent, StartComponent, DashHeaderComponent, DashChartsComponent, DashFooterComponent],
+  declarations: [VienComponent, StartComponent, DashHeaderComponent, DashChartsComponent, DashFooterComponent, ConceptoComponent, CheckBoxLateralComponent, CheckboxsComponent],
   imports: [
     SharedModule,
     LayoutContainersModule,
