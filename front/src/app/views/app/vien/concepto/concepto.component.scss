@@ -135,3 +135,70 @@
 .input-container input[type="text"]:valid ~ .underline {
   transform: scaleX(1);
 }
+
+
+.custom-select {
+  margin-left: 65px;
+  padding-right: -100%;
+  
+  border: none;
+}
+
+.custom-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Esta es la animacion del menú desplegable */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-toggle {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdown-menu li {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  animation: fadeIn 0.6s forwards; /* Aplicar la animación al mostrar */
+}
+
+

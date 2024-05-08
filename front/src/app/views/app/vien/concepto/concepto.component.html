@@ -3,7 +3,7 @@
     <app-check-box-lateral></app-check-box-lateral>
     <div class="row">
       <div class="col-md-6">
-        <div class="card" style="margin-top: 9px; margin-right: -5%;">
+        <div class="card" style="margin-top: 9px; margin-right: -5%; height: 99% ; width: 120%;">
           <div class="card-body">
             <form>
                 <div class="row">
@@ -28,17 +28,17 @@
                     </div>
         
                     <div class="custom-select">
-                      <label for="ruta" class="custom-label">Ruta de categoría:</label>
-                      <select id="ruta" formControlName="ruta" class="custom-select-box">
-                          <option selected disabled>Seleccionar categoría</option>
-                          <option value="opcion1">Opción 1</option>
-                          <option value="opcion2">Opción 2</option>
-                          <option value="opcion3">Opción 3</option>
-                          <option value="opcion4">Opción 4</option>
-                      </select>
-                  </div>
-                  
-  
+                      <label for="categoria" class="custom-label">Ruta de categoría:</label>
+                      <div class="dropdown">
+                        <a href="#" class="dropdown-toggle"><span>Seleccionar categoría</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul id="categoria" class="dropdown-menu">
+                          <li><a href="#">Categoría 1</a></li>
+                          <li><a href="#">Categoría 2</a></li>
+                          <li><a href="#">Categoría 3</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    
                   <div class="input-container">
                     <input type="text" id="input" required="">
                     <label for="input" class="label">Costo</label>
@@ -108,9 +108,9 @@
           </div>
         </div>
       </div>
-      <div class="col-md-5" >
-        <div class="card" style="padding: 20px; width: 80%; height: -50px; margin-top: 9px;">
-          <div class="card-body ">
+      <div class="col-md-4" >
+        <div class="card" style="  margin: 120px; margin-top: 2.4%; width: 90%;">
+          <div class="card-body "  >
             <app-checkboxs></app-checkboxs>
           </div>
         </div>
