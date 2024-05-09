@@ -1,0 +1,11 @@
+.card {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .card {
+      margin-top: 20px;
+    }
+  }
+  

@@ -29,7 +29,8 @@ import { ThermalPrintModule } from 'ng-thermal-print';
 @NgModule({
   declarations: [
     AppComponent,
-    SanitizerPipe
+    SanitizerPipe,
+    
   ],
   imports: [
 
