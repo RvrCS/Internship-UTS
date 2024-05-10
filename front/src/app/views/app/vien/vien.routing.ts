@@ -5,6 +5,7 @@ import { StartComponent } from './start/start.component';
 import { ConceptoComponent } from './concepto/concepto.component';
 import { CheckBoxLateralComponent } from './menu-bottom/check-box-lateral.component';
 import { DashConceptoComponent } from './dash-concepto/dash-concepto.component';
+import { DashPreciosComponent } from './dash-precios/dash-precios.component';
 
 const routes: Routes = [
     {
@@ -13,6 +14,7 @@ const routes: Routes = [
             { path: '', redirectTo: 'start', pathMatch: 'full' },
             { path: 'start', component: StartComponent },
             { path: 'dashconcepto', component: DashConceptoComponent },
+            { path: 'dashprecio', component: DashPreciosComponent },
             
             
         ]

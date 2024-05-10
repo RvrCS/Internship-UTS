@@ -14,7 +14,8 @@ import { DashConceptoComponent } from './dash-concepto/dash-concepto.component';
 import { DashPreciosComponent } from './dash-precios/dash-precios.component';
 
 @NgModule({
-  declarations: [VienComponent, StartComponent, DashHeaderComponent, DashChartsComponent, DashFooterComponent, ConceptoComponent, CheckBoxLateralComponent, CheckboxsComponent, DashConceptoComponent, DashPreciosComponent],
+  declarations: [VienComponent, StartComponent, DashHeaderComponent, DashChartsComponent, DashFooterComponent, ConceptoComponent, CheckBoxLateralComponent,
+     CheckboxsComponent, DashConceptoComponent, DashPreciosComponent],
   imports: [
     SharedModule,
     LayoutContainersModule,
