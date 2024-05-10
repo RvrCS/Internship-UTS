@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-check-box-lateral',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckBoxLateralComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  redireccion(route: string){ 
+
+    this.router.navigate(['/precios'])
+
+  }
 
   ngOnInit(): void {
   }

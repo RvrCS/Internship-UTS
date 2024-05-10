@@ -2,24 +2,24 @@
   <div class="row">
     <div class="col-md-8">
       <div class="input-container">
-        <input type="text" id="input" required="" placeholder="Clave del producto">
-        <label for="input" class="label">Clave</label>
+        <input type="text" id="clave" required="" placeholder="Clave del producto" class="text-input">
+        <label for="clave" class="label">Clave</label>
         <div class="underline"></div>
       </div>
 
       <div class="input-container">
-        <input type="text" id="input" required="" placeholder="Descripcion">
-        <label for="input" class="label">Descripcion</label>
+        <input type="text" id="descripcion" required="" placeholder="Descripcion" class="text-input">
+        <label for="descripcion" class="label">Descripcion</label>
         <div class="underline"></div>
       </div>
 
       <div class="input-container">
-        <input type="text" id="input" required="" placeholder="Codigo de barra del producto">
-        <label for="input" class="label">Codigo de barras</label>
+        <input type="number" id="codigo-barra" required="" placeholder="Codigo de barra del producto" class="text-input">
+        <label for="codigo-barra" class="label">Codigo de barras</label>
         <div class="underline"></div>
       </div>
 
-      <div class="custom-select ">
+      <div class="custom-select">
         <div class="dropdown">
           <a href="#" id="categoria" class="dropdown-toggle"><span>Seleccionar categoría</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
           <ul id="categoria" class="dropdown-menu">
@@ -31,92 +31,90 @@
       </div> 
 
       <div class="input-container">
-        <input type="text" id="input" required="" placeholder="Costo de producto">
-        <label for="input" class="label">Costo</label>
+        <input type="number" id="costo" required="" placeholder="Costo de producto" class="num-input">
+        <label for="costo" class="label">Costo</label>
         <div class="underline"></div>
       </div>
 
       <div class="input-container">
-        <input type="text" id="input" required="" placeholder="Ultimo costo del producto">
-        <label for="input" class="label">Ultimo Costo</label>
+        <input type="number" id="ultimo-costo" required="" placeholder="Ultimo costo del producto" class="num-input">
+        <label for="ultimo-costo" class="label">Ultimo Costo</label>
         <div class="underline"></div>
       </div>
 
       <div class="input-container">
-        <input type="text" id="input" required="">
-        <label for="input" class="label">Clave unidad SAT</label>
+        <input type="text" id="clave-unidad" required="" placeholder="Clave unidad SAT" class="text-input">
+        <label for="clave-unidad" class="label">Clave unidad SAT</label>
         <div class="underline"></div>
       </div>
     </div>
 
-    <div class="col-md-4" > 
+    <div class="col-md-4"> 
       <div class="input-container">
-        <input type="text" id="input" required="" placeholder="Precio del producto">
-        <label for="input" class="label">Precio</label>
+        <input type="number" id="precio" required="" placeholder="Precio del producto" class="num-input">
+        <label for="precio" class="label">Precio</label>
         <div class="underline"></div>
       </div>
 
       <div class="input-container">
-        <input type="text" id="input" required="" placeholder="Margen del producto (%)">
-        <label for="input" class="label">Margen</label>
+        <input type="number" id="margen" required="" placeholder="Margen del producto (%)" class="num-input">
+        <label for="margen" class="label">Margen</label>
         <div class="underline"></div>
       </div>
 
       <div class="input-container">
-        <input type="text" id="input" required="" placeholder="$0.000000">
-        <label for="input" class="label">Precio final</label>
+        <input type="number" id="precio-final" required="" placeholder="$0.000000" class="text-input">
+        <label for="precio-final" class="label">Precio final</label>
         <div class="underline"></div>
       </div>
 
-      <div class="custom-select"  >
+      <div class="custom-select">
         <div class="dropdown">
           <a href="#" id="unidad" class="dropdown-toggle"><span> Unidad</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-          <ul id="categoria" class="dropdown-menu">
-            
-              <li><a href="#">NA</a></li>
-              <li><a href="#">Kilo</a></li>
-              <li><a href="#">Gramo</a></li>
-              <li><a href="#">Metro Lineal</a></li>
-              <li><a href="#">Metro Cuadrado</a></li>
-              <li><a href="#">Metro Cubico</a></li>
-              <li><a href="#">Pieza</a></li>
-              <li><a href="#">Cabeza Litro</a></li>
-              <li><a href="#">Par</a></li>
-              <li><a href="#">Kilowatt</a></li>
-              <li><a href="#">Millar</a></li>
-              <li><a href="#">Juego</a></li>
-              <li><a href="#">Kilowatt/Hora</a></li>
-              <li><a href="#">Tonelada</a></li>
-              <li><a href="#">Barril</a></li>
-              <li><a href="#">Gramo Neto</a></li>
-              <li><a href="#">Ciento </a></li>
-              <li><a href="#">Decenas</a></li>
-              <li><a href="#">Cajas</a></li>
-              <li><a href="#">Botella </a></li>
-              <li><a href="#">Lote </a></li>
-              <li><a href="#">Tramo </a></li>
-              <li><a href="#">Hoja </a></li>
-              <li><a href="#">Caja </a></li>
-            
+          <ul id="unidad" class="dropdown-menu">
+            <li><a href="#">N/A</a></li>
+            <li><a href="#">Kilo</a></li>
+            <li><a href="#">Gramo</a></li>
+            <li><a href="#">Metro Lineal</a></li>
+            <li><a href="#">Metro Cuadrado</a></li>
+            <li><a href="#">Metro Cubico</a></li>
+            <li><a href="#">Pieza</a></li>
+            <li><a href="#">Cabeza Litro</a></li>
+            <li><a href="#">Par</a></li>
+            <li><a href="#">Kilowatt</a></li>
+            <li><a href="#">Millar</a></li>
+            <li><a href="#">Juego</a></li>
+            <li><a href="#">Kilowatt/Hora</a></li>
+            <li><a href="#">Tonelada</a></li>
+            <li><a href="#">Barril</a></li>
+            <li><a href="#">Gramo Neto</a></li>
+            <li><a href="#">Ciento </a></li>
+            <li><a href="#">Decenas</a></li>
+            <li><a href="#">Cajas</a></li>
+            <li><a href="#">Botella </a></li>
+            <li><a href="#">Lote </a></li>
+            <li><a href="#">Tramo </a></li>
+            <li><a href="#">Hoja </a></li>
+            <li><a href="#">Caja </a></li>
           </ul>
         </div>
       </div>
 
       <div class="input-container">
-        <input type="text" id="input" required="" placeholder="$0">
-        <label for="input" class="label">Maximo</label>
+        <input type="number" id="maximo" required="" placeholder="$0" class="text-input">
+        <label for="maximo" class="label">Maximo</label>
         <div class="underline"></div>
       </div>
 
       <div class="input-container">
-        <input type="text" id="input" required="" placeholder="$0">
-        <label for="input" class="label">Minimo</label>
+        <input type="number" id="minimo" required="" placeholder="$0" class="text-input">
+        <label for="minimo" class="label">Minimo</label>
         <div class="underline"></div>
       </div>
 
       <div class="input-container">
-        <input type="text" id="input" required="">
-        <label for="input" class="label">Clave producto y/o servicio:</label>
+        <input type="text" id="clave-producto" required="" placeholder="Clave producto y/o servicio:" class="text-input">
+        <label for="clave-producto" class="label">Clave producto y/o servicio:</label>
         <div class="underline"></div>
       </div>
     </div>
